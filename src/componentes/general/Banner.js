@@ -1,4 +1,6 @@
-import consultorio from "./consultorio.jpg";
+import bannerdoc from "../imagenes/bannerdoc.jpg"
+import citamedica from "../imagenes/citamedica.jpg"
+import equipoesp from "../imagenes/equipoesp.jpg"
 
 const Banner = () => {
     return (
@@ -12,10 +14,10 @@ const Banner = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                <svg className="bm-img" source={consultorio} width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>
+                <img src={bannerdoc} alt="doctor" width="100%" height="600"/>
                     <div className="container">
                     <div className="carousel-caption text-start">
-                            <h1>Example headline.</h1>
+                            <h1>Doctor Online</h1>
                             
                             <p>Ofrecemos servicios de salud en medicina especializada</p>
                             <p><a className="btn btn-md btn-primary" href="/especialidades">Ver nuestras especialidades</a></p>
@@ -23,39 +25,38 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
+                <img src={equipoesp} alt="doctor" width="100%" height="600"/>
                     <div className="container">
                         <div className="carousel-caption">
-                            <h1>Another example headline.</h1>
+                            <h1>Profesionales especializados</h1>
                             <p>Contamos un amplio directorio de médicos especializados</p>
                             <p><a className="btn btn-md btn-success" href="/doctores">Consultar Doctores</a></p>
                         </div>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>
+                    <img src={citamedica} alt="doctor" width="100%" height="600"/>
 
                     <div className="container">
                         <div className="carousel-caption text-end">
-                            <h1>One more for good measure.</h1>
+                            <h1>Programación de citas</h1>
                             <p>Programe una cita médica especializada</p>
-                            <p><a className="btn btn-md btn-info" href="/citas">Consultar citas</a></p>
+                            <p><a className="btn btn-md btn-info" href="/citas">Angendar cita</a></p>
                         </div>
                     </div>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
+                <span className="visually-hidden">Anterior</span>
             </button>
             <button className="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
+                <span className="visually-hidden">Siguiente</span>
             </button>
         </div>
         </div>
-    )
+    );
 }
 
 export default Banner;

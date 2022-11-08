@@ -11,7 +11,7 @@ const Footer = () => {
                 </div>
 
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-                    <li className="ms-3"><a className="text-muted" href="/"><svg class="bi" width="24" height="24"><use xlinkHref="#twitter" /></svg></a></li>
+                    <li className="ms-3"><a className="text-muted" href="/"><i className="bi bi-chat" title="Chatea con Nosotros"/></a></li>
                     <li className="ms-3"><a className="text-muted" href="/"><svg class="bi" width="24" height="24"><use xlinkHref="#instagram" /></svg></a></li>
                     <li className="ms-3"><a className="text-muted" href="/"><svg class="bi" width="24" height="24"><use xlinkHref="#facebook" /></svg></a></li>
                 </ul>

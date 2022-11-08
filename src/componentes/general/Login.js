@@ -1,27 +1,26 @@
 const Login = () => {
     return (
-        <form>
-            <formgroup className="mb-3" controlId="formBasicEmail">
-                <formlabel>Email address</formlabel>
-                <formcontrol type="email" placeholder="Enter email" />
-                <formtext className="text-muted">
-                    We'll never share your email with anyone else.
-                </formtext>
+        <div className="container mt-3">
+            <h2>Mi cuenta</h2>
+            <form action="/action_page.php">
+                <div className="mb-3 mt-3">
+                    <label for="email">Correo:</label>
+                    <input type="email" className="form-control" id="email" placeholder="Ingrese su correo" name="email"/>
+                </div>
+                <div className="mb-3">
+                    <label for="pwd">Contraseña:</label>
+                    <input type="password" className="form-control" id="pwd" placeholder="Ingrese su contraseña" name="pswd"/>
+                </div>
+                <div className="form-check mb-3">
+                    <label className="form-check-label">
+                        <input className="form-check-input" type="checkbox" name="remember"/> Recordarme
+                    </label>
+                </div>
+                <button type="submit" className="btn btn-primary">Ingresar</button>
+            </form>
+        </div>
 
-                <formgroup className="mb-3" controlId="formBasicPassword">
-                <formlabel>Password</formlabel>
-                <formcontrol type="password" placeholder="Password" />
-            </formgroup>
-            <formgroup className="mb-3" controlId="formBasicCheckbox">
-                <formcheck type="checkbox" label="Check me out" />
-            </formgroup>
-            <button variant="primary" type="submit">
-                Submit
-            </button>
-            </formgroup>
-        </form>
 
-        
 
     )
 
